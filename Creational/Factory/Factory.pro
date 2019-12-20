@@ -7,13 +7,11 @@ SOURCES += \
         ConcreteFactory.cpp \
         ConcreteProductA.cpp \
         ConcreteProductB.cpp \
-        Driver.cpp \
         main.cpp
 
 HEADERS += \
     ConcreteFactory.h \
     ConcreteProductA.h \
     ConcreteProductB.h \
-    Driver.h \
     IFactory.h \
     IProduct.h

@@ -10,7 +10,6 @@ SOURCES += \
         ConcreteProductAY.cpp \
         ConcreteProductBX.cpp \
         ConcreteProductBY.cpp \
-        Driver.cpp \
         main.cpp
 
 HEADERS += \
@@ -20,7 +19,6 @@ HEADERS += \
     ConcreteProductAY.h \
     ConcreteProductBX.h \
     ConcreteProductBY.h \
-    Driver.h \
     IFactory.h \
     IProductA.h \
     IProductB.h

@@ -1,18 +1,27 @@
 #include <ConcretePrototypeFactory.h>
 
+#include <iostream>
+
 int main()
 {
     IPrototyprFactory *factory = new ConcretePrototypeFactory();
+    IPrototype *prototype, *cloneOfPrototype;
+    int option;
 
-    // Create concretePrototypeA and its clone
-    IPrototype* concretePrototypeA = factory->createConcretePrototypeA();
-    concretePrototypeA->performTask();
-    IPrototype* cloneOfConcreatePrototypeA = concretePrototypeA->clone();
-    cloneOfConcreatePrototypeA->performTask();
+    std::cin >> option;
 
-    // Create concretePrototypeB and its clone
-    IPrototype* concretePrototypeB = factory->createConcretePrototypeB();
-    concretePrototypeB->performTask();
-    IPrototype* cloneOfConcreatePrototypeB = concretePrototypeB->clone();
-    cloneOfConcreatePrototypeB->performTask();
+    if (option == 1)
+    {
+        prototype = factory->createConcretePrototypeA();
+    }
+    else
+    {
+        prototype = factory->createConcretePrototypeB();
+    }
+
+    prototype->performTask();
+    cloneOfPrototype = prototype->clone();
+    cloneOfPrototype->performTask();
+
+    return 0;
 }
