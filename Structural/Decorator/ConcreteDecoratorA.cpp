@@ -2,10 +2,10 @@
 
 #include <iostream>
 
-ConcreteDecoratorA::ConcreteDecoratorA(IComponent *component) : Decorator(component) {}
+ConcreteDecoratorA::ConcreteDecoratorA(IComponent *component) : DecoratorBase(component) {}
 
 void ConcreteDecoratorA::performTask() const
 {
-    Decorator::performTask();
+    DecoratorBase::performTask();
     std::cout << "Decorating with A" << std::endl;
 }

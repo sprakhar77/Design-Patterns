@@ -7,12 +7,12 @@ SOURCES += \
         ConcreteComponent.cpp \
         ConcreteDecoratorA.cpp \
         ConcreteDecoratorB.cpp \
-        Decorator.cpp \
+        DecoratorBase.cpp \
         main.cpp
 
 HEADERS += \
     ConcreteComponent.h \
     ConcreteDecoratorA.h \
     ConcreteDecoratorB.h \
-    Decorator.h \
+    DecoratorBase.h \
     IComponent.h

@@ -1,4 +1,4 @@
-#include "Director.h"
+#include "ConcreteDirector.h"
 #include "ConcreteBuilderX.h"
 #include "ConcreteBuilderY.h"
 
@@ -6,19 +6,19 @@
 
 int main()
 {
-    Director director;
+    IDirector *director = new ConcreteDirector();
 
     // Create objects of type X
     IBuilder *builderX = new ConcreteBuilderX();
-    director.setBuilder(builderX);
-    director.create();
-    std::cout << director.get().allParts() << std::endl;
+    director->setBuilder(builderX);
+    director->create();
+    std::cout << director->get().allParts() << std::endl;
 
     // Create objects of type Y
     IBuilder *builderY = new ConcreteBuilderY();
-    director.setBuilder(builderY);
-    director.create();
-    std::cout << director.get().allParts() << std::endl;
+    director->setBuilder(builderY);
+    director->create();
+    std::cout << director->get().allParts() << std::endl;
 
     return 0;
 }

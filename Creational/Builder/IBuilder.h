@@ -7,12 +7,8 @@ class IBuilder
 public:
     virtual ~IBuilder() = default;
 
-    Product get() const {return m_product;}
-
+    virtual Product get() const = 0;
     virtual void buildPartA() = 0;
     virtual void buildPartB() = 0;
     virtual void buildPartC() = 0;
-
-protected:
-    Product m_product;
 };

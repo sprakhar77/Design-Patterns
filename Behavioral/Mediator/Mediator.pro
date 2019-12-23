@@ -4,12 +4,12 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp \
-    CollegueBase.cpp \
-    Mediator.cpp
+    ConcreteCollegue.cpp \
+    ConcreteMediator.cpp \
+        main.cpp
 
 HEADERS += \
+    ConcreteCollegue.h \
+    ConcreteMediator.h \
     IMediator.h \
-    CollegueBase.h \
-    ICollegue.h \
-    Mediator.h
+    ICollegue.h

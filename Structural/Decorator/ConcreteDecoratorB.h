@@ -1,6 +1,6 @@
-#include <Decorator.h>
+#include <DecoratorBase.h>
 
-class ConcreteDecoratorB : public Decorator
+class ConcreteDecoratorB : public DecoratorBase
 {
 public:
     ConcreteDecoratorB(IComponent * component);

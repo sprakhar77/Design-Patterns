@@ -4,15 +4,18 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        BuilderBase.cpp \
         ConcreteBuilderX.cpp \
         ConcreteBuilderY.cpp \
-        Director.cpp \
+        ConcreteDirector.cpp \
         Product.cpp \
         main.cpp
 
 HEADERS += \
+    BuilderBase.h \
     ConcreteBuilderX.h \
     ConcreteBuilderY.h \
-    Director.h \
+    ConcreteDirector.h \
     IBuilder.h \
+    IDirector.h \
     Product.h

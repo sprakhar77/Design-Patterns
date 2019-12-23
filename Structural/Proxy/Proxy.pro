@@ -12,4 +12,3 @@ HEADERS += \
     IComponent.h \
     ConcreteComponent.h \
     ProxyComponent.h \
-    icomponent.h

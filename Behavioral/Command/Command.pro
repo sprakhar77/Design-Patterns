@@ -12,6 +12,7 @@ SOURCES += \
     Invoker.cpp
 
 HEADERS += \
+    IInvoker.h \
     IReciever.h \
     ICommand.h \
     ConcreteCommandA.h \

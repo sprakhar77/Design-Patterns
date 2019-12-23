@@ -1,7 +1,7 @@
-#include "Director.h"
+#include "ConcreteDirector.h"
 
 
-void Director::setBuilder(IBuilder *builder)
+void ConcreteDirector::setBuilder(IBuilder *builder)
 {
     if (!builder)
     {
@@ -15,7 +15,7 @@ void Director::setBuilder(IBuilder *builder)
     m_builder = builder;
 }
 
-void Director::create()
+void ConcreteDirector::create()
 {
     // Director know the sequence in which the builder needs to construct parts
     m_builder->buildPartC();
@@ -23,7 +23,7 @@ void Director::create()
     m_builder->buildPartA();
 }
 
-Product Director::get()
+Product ConcreteDirector::get()
 {
     return m_builder->get();
 }

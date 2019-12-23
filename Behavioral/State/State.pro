@@ -4,20 +4,20 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+    ConcreteStateA.cpp \
+    ConcreteStateB.cpp \
+    ConcreteStateC.cpp \
+    ConcreteStateD.cpp \
         main.cpp \
     StateBase.cpp \
-    StateA.cpp \
-    StateB.cpp \
-    StateC.cpp \
-    StateD.cpp \
     ConcreteContext.cpp
 
 HEADERS += \
+    ConcreteStateA.h \
+    ConcreteStateB.h \
+    ConcreteStateC.h \
+    ConcreteStateD.h \
     StateBase.h \
     IState.h \
-    StateA.h \
-    StateB.h \
-    StateC.h \
-    StateD.h \
     IContext.h \
     ConcreteContext.h

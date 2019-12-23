@@ -1,6 +1,5 @@
 #include "ConcreteBuilderX.h"
 
-
 void ConcreteBuilderX::buildPartA()
 {
     m_product.makePartA("A-X");

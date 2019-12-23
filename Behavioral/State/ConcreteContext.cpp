@@ -1,9 +1,9 @@
 #include "ConcreteContext.h"
-#include <StateA.h>
+#include <ConcreteStateA.h>
 
 ConcreteContext::ConcreteContext()
 {
-    m_currentState = new StateA(this);
+    m_currentState = new ConcreteStateA(this);
 }
 
 void ConcreteContext::actionA()

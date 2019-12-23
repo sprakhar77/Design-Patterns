@@ -9,7 +9,7 @@ int main()
     ICommand *commandA = new ConcreteCommandA(new ConcreteRecieverX());
     ICommand *commandB = new ConcreteCommandA(new ConcreteRecieverY());
 
-    Invoker *invoker = new Invoker();
+    IInvoker *invoker = new ConcreteInvoker();
     invoker->setCommand(commandA);
     invoker->confirm();
 

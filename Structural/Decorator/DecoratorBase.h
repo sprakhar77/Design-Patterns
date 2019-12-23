@@ -2,10 +2,10 @@
 
 #include <IComponent.h>
 
-class Decorator : public IComponent
+class DecoratorBase : public IComponent
 {
 public:
-    Decorator(IComponent * component);
+    DecoratorBase(IComponent * component);
     virtual void performTask() const override;
 
 private:

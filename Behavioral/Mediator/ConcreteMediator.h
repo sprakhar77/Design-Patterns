@@ -2,10 +2,10 @@
 
 #include <vector>
 
-class Mediator : public IMediator
+class ConcreteMediator : public IMediator
 {
 public:
-    Mediator() = default;
+    ConcreteMediator() = default;
     virtual void add(ICollegue *collegue) override;
     virtual void distribute(ICollegue *sender, const std::string& message) override;
 

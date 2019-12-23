@@ -1,13 +1,13 @@
-#include <CollegueBase.h>
-#include <Mediator.h>
+#include <ConcreteCollegue.h>
+#include <ConcreteMediator.h>
 
 int main()
 {
-    IMediator *mediator = new Mediator();
+    IMediator *mediator = new ConcreteMediator();
 
-    ICollegue *collegueA = new CollegueBase(mediator, 1);
-    ICollegue *collegueB = new CollegueBase(mediator, 2);
-    ICollegue *collegueC = new CollegueBase(mediator, 3);
+    ICollegue *collegueA = new ConcreteCollegue(mediator, 1);
+    ICollegue *collegueB = new ConcreteCollegue(mediator, 2);
+    ICollegue *collegueC = new ConcreteCollegue(mediator, 3);
 
     mediator->add(collegueA);
     mediator->add(collegueB);

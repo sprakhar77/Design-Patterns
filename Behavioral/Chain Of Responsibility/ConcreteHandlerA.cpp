@@ -1,11 +1,6 @@
 #include "ConcreteHandlerA.h"
 #include <iostream>
 
-bool ConcreteHandlerA::canhandle() const
-{
-    return false;
-}
-
 void ConcreteHandlerA::handleRequest() const
 {
     if (canhandle())

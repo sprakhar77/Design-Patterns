@@ -1,12 +1,12 @@
-#include <ICommand.h>
+#include <IInvoker.h>
 
-class Invoker
+class ConcreteInvoker : public IInvoker
 {
 public:
-    Invoker() = default;
+    ConcreteInvoker() = default;
 
-    void setCommand(ICommand *command);
-    void confirm();
+    void setCommand(ICommand *command) override;
+    void confirm() override;
 
 private:
     ICommand *m_command;

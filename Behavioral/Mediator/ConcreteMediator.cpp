@@ -1,12 +1,12 @@
-#include "Mediator.h"
+#include "ConcreteMediator.h"
 #include <ICollegue.h>
 
-void Mediator::add(ICollegue *collegue)
+void ConcreteMediator::add(ICollegue *collegue)
 {
     m_collegues.push_back(collegue);
 }
 
-void Mediator::distribute(ICollegue *sender, const std::string &message)
+void ConcreteMediator::distribute(ICollegue *sender, const std::string &message)
 {
     for (const auto collegue : m_collegues)
     {

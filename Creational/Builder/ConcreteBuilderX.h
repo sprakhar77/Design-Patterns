@@ -1,6 +1,6 @@
-#include <IBuilder.h>
+#include <BuilderBase.h>
 
-class ConcreteBuilderX : public IBuilder
+class ConcreteBuilderX : public BuilderBase
 {
 public:
     ConcreteBuilderX() = default;

@@ -1,9 +1,9 @@
 #include <StateBase.h>
 
-class StateB : public StateBase
+class ConcreteStateB : public StateBase
 {
 public:
-    StateB(IContext *context);
+    ConcreteStateB(IContext *context);
 
     virtual void performTaskB() const override;
 };

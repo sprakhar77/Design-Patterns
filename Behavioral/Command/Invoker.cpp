@@ -1,12 +1,12 @@
 #include "Invoker.h"
 
 
-void Invoker::setCommand(ICommand *command)
+void ConcreteInvoker::setCommand(ICommand *command)
 {
     m_command = command;
 }
 
-void Invoker::confirm()
+void ConcreteInvoker::confirm()
 {
     if (m_command)
     {
